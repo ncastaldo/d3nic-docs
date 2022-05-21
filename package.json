@@ -1,0 +1,22 @@
+{
+  "name": "d3nic-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "keywords": [
+    "d3nic",
+    "docs"
+  ],
+  "author": "Nicola Castaldo",
+  "license": "MIT",
+  "dependencies": {
+    "d3nic": "^0.5.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
