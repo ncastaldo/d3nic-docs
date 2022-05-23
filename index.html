@@ -7,13 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/d3-selection@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-random@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3nic/dist/index.js"></script>
+
   <title>d3nic</title>
 </head>
 
 <body>
 
-  <nav class="relative container mx-auto p-6">
-    <div class="flex items-center justify-between">
+  <nav class="shadow-md">
+    <div class="relative container mx-auto flex items-center px-6 py-4 justify-between">
       <div>
         <h1 class="text-4xl text-vueGreen">
           <a href="#">d3nic</a>
@@ -26,23 +34,33 @@
     </div>
   </nav>
 
-  <section class="pt-3">
+  <section class="p-6">
     <div class="container mx-auto">
-      <h3 class="px-4 mx-auto text-lg text-center">
+      <h3 class="max-w-sm mx-auto my-2 text-lg text-center  md:text-2xl">
         Use d3nic to easily create <span class="font-semibold">interactive</span> and
         <span class="font-semibold">dynamic</span> charts.
       </h3>
     </div>
   </section>
 
-  <section>
-    <div class="container flex items-center px-6 mx-auto my-10 space-y-0 md:flex-row ">
-      <div class="flex flex-col mb-32 space-y-12">
-        ciao
+  <section class="p-6">
+    <div class="container mx-auto flex flex-col flex-wrap items-center md:flex-row ">
+      <div class="space-y-8 w-full md:w-1/2 xl:w-1/4" id="chart-container-1">
+
+      </div>
+      <div class="space-y-8 w-full md:w-1/2 xl:w-1/4" id="chart-container-2">
+
+      </div>
+      <div class="space-y-8 w-full md:w-1/2 xl:w-1/4" id="chart-container-3">
+
+      </div>
+      <div class="space-y-8 w-full  md:w-1/2 xl:w-1/4" id="chart-container-4">
+
       </div>
     </div>
   </section>
 
+  <script src="js/script.js"></script>
 
 </body>
 
