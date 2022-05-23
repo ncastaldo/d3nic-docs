@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./input.css -o ./css/main.css",
-    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+    "build:css": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch:css": "tailwindcss -i ./input.css -o ./css/main.css --watch",
+    "build": "npm run build:css && mkdir -p dist && cp -r index.html css js dist"
   },
   "keywords": [
     "d3nic",
