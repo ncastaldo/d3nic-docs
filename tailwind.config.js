@@ -9,7 +9,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        vueGreen: "rgb(66, 160, 126)"
+        vueGreen: "rgb(66, 160, 126)",
+        viridisGreen: "rgb(43, 151, 139)"
       }
     },
   },
