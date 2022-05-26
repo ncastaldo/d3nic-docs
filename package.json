@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -i ./input.css -o ./css/main.css",
-    "watch:css": "tailwindcss -i ./input.css -o ./css/main.css --watch",
-    "watch:http": "http-server -c-1",
-    "build": "npm run build:css && mkdir -p dist && cp -r index.html css js dist"
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "watch": "webpack --watch"
   },
   "keywords": [
     "d3nic",
@@ -16,10 +16,20 @@
   "author": "Nicola Castaldo",
   "license": "MIT",
   "dependencies": {
-    "d3nic": "^0.5.1"
+    "d3-random": "^3.0.1",
+    "d3-scale-chromatic": "^3.0.0",
+    "d3-selection": "^2.0.0",
+    "d3nic": "^0.5.2"
   },
   "devDependencies": {
-    "http-server": "^14.1.0",
-    "tailwindcss": "^3.0.24"
+    "autoprefixer": "^10.4.7",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   }
 }
